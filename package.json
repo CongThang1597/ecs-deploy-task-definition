@@ -1,0 +1,35 @@
+{
+  "name": "ecs-deploy-task-definition",
+  "version": "1.0.0",
+  "description": "ecs-deploy-task-definition",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "export NODE_OPTIONS=--openssl-legacy-provider && ncc build index.js -o dist",
+    "test": "eslint **.js && jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CongThang1597/ecs-deploy-task-definition.git"
+  },
+  "keywords": [
+    "AWS",
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "CongThang1597",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CongThang1597/ecs-deploy-task-definition/issues"
+  },
+  "homepage": "https://github.com/CongThang1597/ecs-deploy-task-definition#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "aws-sdk": "^2.1112.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^8.13.0"
+  }
+}
